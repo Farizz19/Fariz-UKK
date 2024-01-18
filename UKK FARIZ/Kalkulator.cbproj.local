@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/01/18 07:56:21.000.195,=C:\Users\tkj 1\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/01/18 07:56:22.000.776,=C:\Users\tkj 1\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/01/18 08:09:19.000.205,C:\Users\tkj 1\Documents\UKK FARIZ\KalkulatorPCH1.h=C:\Users\tkj 1\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/01/18 08:09:19.000.237,C:\Users\tkj 1\Documents\UKK FARIZ\Unit1.cpp=C:\Users\tkj 1\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/01/18 08:09:19.000.237,C:\Users\tkj 1\Documents\UKK FARIZ\Unit1.dfm=C:\Users\tkj 1\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/01/18 08:09:19.000.268,C:\Users\tkj 1\Documents\UKK FARIZ\Kalkulator.cbproj=C:\Users\tkj 1\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2024/01/18 08:09:19.000.237,C:\Users\tkj 1\Documents\UKK FARIZ\Unit1.h=C:\Users\tkj 1\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2024/01/18 08:09:26.000.502,C:\Users\tkj 1\Documents\UKK FARIZ\KalkulatorUKK.cpp=C:\Users\tkj 1\Documents\UKK FARIZ\Unit1.cpp</Transaction>
+    <Transaction>2024/01/18 08:09:26.000.502,C:\Users\tkj 1\Documents\UKK FARIZ\KalkulatorUKK.dfm=C:\Users\tkj 1\Documents\UKK FARIZ\Unit1.dfm</Transaction>
+    <Transaction>2024/01/18 08:09:26.000.502,C:\Users\tkj 1\Documents\UKK FARIZ\KalkulatorUKK.h=C:\Users\tkj 1\Documents\UKK FARIZ\Unit1.h</Transaction>
+  </Transactions>
+</BorlandProject>

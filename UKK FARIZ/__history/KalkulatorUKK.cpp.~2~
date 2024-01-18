@@ -1,0 +1,139 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "KalkulatorUKK.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+Double nilai_a, nilai_b, hasil;
+String op;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Angka(TObject *Sender)
+{
+	TButton* b = ((TButton*)Sender);
+	if(Layar->Text == "0")
+	{
+		Layar->Text = b->Caption;
+	}
+	else{
+		Layar->Text = Layar->Text + b->Caption;
+    }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Operator(TObject *Sender)
+{
+	TButton* b = ((TButton*)Sender);
+	nilai_a = Layar->Text.ToDouble();
+	op = b->Caption;
+	Layar->Text = "";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Hitung(TObject *Sender)
+{
+	nilai_b = Layar->Text.ToDouble();
+	if(op == "+")
+	{
+		hasil = nilai_a + nilai_b;
+		Layar->Text = hasil;
+	}
+	else if(op == "-")
+	{
+		hasil = nilai_a - nilai_b;
+		Layar->Text = hasil;
+	}
+	else if(op == "x")
+	{
+		hasil = nilai_a * nilai_b;
+		Layar->Text = hasil;
+	}
+	else if(op == "÷")
+	{
+		hasil = nilai_a / nilai_b;
+		Layar->Text = hasil;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Persen(TObject *Sender)
+{
+	nilai_a = Layar->Text.ToDouble();
+	hasil = nilai_a / 100;
+	Layar->Text = hasil;
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Permil(TObject *Sender)
+{
+	nilai_a = Layar->Text.ToDouble();
+	hasil = nilai_a / 1000;
+    Layar->Text = hasil;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Permiriad(TObject *Sender)
+{
+	nilai_a = Layar->Text.ToDouble();
+	hasil = nilai_a / 10000;
+    Layar->Text = hasil;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Min_Plus(TObject *Sender)
+{
+	double q = Layar->Text.ToDouble();
+    Layar->Text = (-1 * q);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Kuadrat(TObject *Sender)
+{
+	double q = Layar->Text.ToDouble();
+    Layar->Text = (q * q);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Pi(TObject *Sender)
+{
+    Layar->Text = 3.14;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Koma(TObject *Sender)
+{
+	if(!Layar->Text.Pos("."));
+	{
+		Layar->Text = Layar->Text + ".";
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Clear(TObject *Sender)
+{
+	Layar->Text = "0";
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Hapus(TObject *Sender)
+{
+	int q = Layar->Text.ToDouble();
+	if(q == 1)
+	{
+		Layar->Text = "0";
+	}
+	else {
+		String d = Layar->Text.Delete(1, q);
+		Layar->Text = d;
+	}
+}
+//---------------------------------------------------------------------------
+
